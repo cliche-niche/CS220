@@ -34,7 +34,7 @@ end
 
 initial begin
 
-    $dumpfile("seq_det_tb.vcd");
+    $dumpfile("odd_parity_tb.vcd");
     $dumpvars(0, seq_det_tb);
 
     $monitor("input = %b, output = %b", inp, out);

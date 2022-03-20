@@ -4,7 +4,7 @@ Further, a `$monitor` statement has been used in all the *test benches* so that 
 
 The purpose of each file has been described briefly below-
 
-+ <u>Question 1:</u> Implement an *eight-bit carry look-ahead adder*.
++ <u>[Question 1:](./Q1/)</u> Implement an *eight-bit carry look-ahead adder*.
 
   + [Four-Bit CLAA](./Q1/four_bit_claa.v): CLAA is the acronymn for Carry Look-Ahead Adder. Module that takes two 4-Bit numbers and outputs the result, along with the resultant carry out.
 
@@ -12,7 +12,7 @@ The purpose of each file has been described briefly below-
 
   + [Test Bench](./Q1/claa_tb.v): Top level module which instantiates an *eight bit claa* to add two numbers *A* and *B*, resulting in *R*. The initial carry is assumed to be 0, but can be changed if required. Apart from the result *R*, it also returns the final carry *(C<sub>out</sub>)*. *20* random values have been generated in the range *0-255* using an inbuilt function `$random`. These serve as our test cases.
 
-+ <u>Question 2:</u> Implement an *eight-bit johnson ring counter*.
++ <u>[Question 2:](./Q2/)</u> Implement an *eight-bit johnson ring counter*.
 
   + [Eight-Bit Johnson Ring Counter](./Q2/johnson_ring_counter.v): Uses direct assignment instead of D Flip Flops for ease in understanding.
 

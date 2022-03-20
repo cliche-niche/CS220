@@ -4,7 +4,7 @@ Further, a `$monitor` statement has been used in all the *test benches* so that 
 
 The purpose of each file has been described briefly below-
 
-+ <u>Question 1:</u> Implement an *eight-bit ripple carry counter*.
++ <u>[Question 1:](./Q1/)</u> Implement an *eight-bit ripple carry counter*.
 
   + [One-Bit Full Adder](./Q1/one_bit_full_adder.v): Lowest level module which takes a carry in and two bits as input and outputs their result and the carry out.
 
@@ -12,7 +12,7 @@ The purpose of each file has been described briefly below-
 
   + [Test Bench](./Q1/eight_bit_adder_tb.v): Top level module which instantiates an *eight bit adder* to add two numbers *A* and *B*, resulting in *R*. The initial carry is assumed to be 0, but can be changed if required. Apart from the result *R*, it also returns the final carry *(C<sub>out</sub>)*. *20* random values have been generated in the range *0-255* using an inbuilt function `$random`. These serve as our test cases.
 
-+ <u>Question 2:</u> Implement an *eight-bit comparator*.
++ <u>[Question 2:](./Q2/)</u> Implement an *eight-bit comparator*.
 
   + [One-Bit Comparator](./Q2/one_bit_comparator.v): Lowest level module, outputs three variables corresponding to *Greater than*, *Equality*, and *Lesser than*. The relation which holds is assigned the value 1, and the rest are assigned 0. Takes in two bits to be compared, and rolling greater than, equality, and lesser than values as input.
 
@@ -20,7 +20,7 @@ The purpose of each file has been described briefly below-
 
   + [Test Bench](./Q2/eight_bit_comparator_tb.v): Top level module which instantiates an *eight bit comparator* to compare two numbers *A* and *B*, and returns three variables corresponding to *greater than*, *equal to*, and *lesser than*. *4* standard values have been assigned initially and *16* random values have been generated in the range *0-254* using an inbuilt function `$random`. These serve as our test cases.
   
-+ <u>Question 3:</u> Implement a *3-to-8 decoder*.
++ <u>[Question 3:](./Q3/)</u> Implement a *3-to-8 decoder*.
 
   + [2-to-4 Decoder](./Q3/two_to_four.v): Lowest level module, assigns the *4 bits* of output using simple boolean expressions which are a function of the *2 bits* of the input and the enabler.
 
@@ -28,7 +28,7 @@ The purpose of each file has been described briefly below-
 
   + [Test Bench](./Q3/three_to_eight_tb.v): Top level module, instantiates a *3-to-8 decoder*. All *8* possible inputs are given to the decoder and the corresponding outputs are calculated. The enabler for the *3-to-8 decoder* is initialized to 1 but can be changed easily if required.
   
-+ <u>Question 4:</u> Implement a *8-to-3 priority encoder*.
++ <u>[Question 4:](./Q4/)</u> Implement a *8-to-3 priority encoder*.
 
   + [8-to-3 Priority Encoder](./Q4/eight_to_three.v): Lower level module. Uses simplified boolean expressions containing the *8 bits* of input to assign priority to the rightmost bit which is 1. The default priority is assumed to be 7 when the input is 0. This is also a consequence of the choice of the *don't care* term in the [Karnaugh Map](./Q4/KMaps.pdf) to simplify the resulting boolean expressions (for the rightmost and middle bit in the priority).
 
